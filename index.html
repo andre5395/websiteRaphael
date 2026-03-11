@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ihr erfahrener Baumeister – professionelle Bauplanung, Neubau, Sanierung und Bauleitung aus einer Hand.">
+    <title>[Ihr Name] Baumeister | Planung · Ausführung · Qualität</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== PRELOADER ===== -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <div class="preloader-logo">
+                <span class="pl-bracket">[</span>
+                <span class="pl-icon"><i class="fas fa-building"></i></span>
+                <span class="pl-bracket">]</span>
+            </div>
+            <div class="pl-bar-wrap">
+                <div class="pl-bar"></div>
+            </div>
+            <span class="pl-label">Wird geladen…</span>
+        </div>
+    </div>
+
+    <!-- ===== SCROLL PROGRESS ===== -->
+    <div id="scroll-progress"></div>
+
+    <!-- ===== HEADER ===== -->
+    <header id="header">
+        <nav class="nav-container">
+            <a href="#hero" class="logo" aria-label="Zur Startseite">
+                <!-- LOGO PLACEHOLDER – ersetzen Sie dies durch Ihr Logo -->
+                <div class="logo-placeholder">
+                    <span class="logo-icon"><i class="fas fa-building"></i></span>
+                    <div class="logo-text-wrap">
+                        <span class="logo-name">[Ihr Name]</span>
+                        <span class="logo-sub">Baumeister</span>
+                    </div>
+                </div>
+            </a>
+
+            <ul class="nav-links" role="list">
+                <li><a href="#ueber-uns"  class="nav-link">Über uns</a></li>
+                <li><a href="#leistungen" class="nav-link">Leistungen</a></li>
+                <li><a href="#projekte"   class="nav-link">Projekte</a></li>
+                <li><a href="#prozess"    class="nav-link">Vorgehen</a></li>
+                <li><a href="#referenzen" class="nav-link">Referenzen</a></li>
+                <li><a href="#kontakt"    class="nav-link nav-cta">Kontakt</a></li>
+            </ul>
+
+            <button class="hamburger" id="hamburger" aria-label="Menü öffnen" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </nav>
+
+        <!-- Mobile overlay menu -->
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+            <ul class="mobile-nav-links" role="list">
+                <li><a href="#ueber-uns"  class="mob-link">Über uns</a></li>
+                <li><a href="#leistungen" class="mob-link">Leistungen</a></li>
+                <li><a href="#projekte"   class="mob-link">Projekte</a></li>
+                <li><a href="#prozess"    class="mob-link">Vorgehen</a></li>
+                <li><a href="#referenzen" class="mob-link">Referenzen</a></li>
+                <li><a href="#kontakt"    class="mob-link mob-cta">Kontakt aufnehmen</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ===== HERO ===== -->
+        <section id="hero">
+            <canvas id="hero-canvas"></canvas>
+
+            <!-- HERO HINTERGRUNDBILD – Platzhalter für Ihr Foto -->
+            <div class="hero-bg-ph">
+                <div class="hero-bg-ph-inner">
+                    <i class="fas fa-image"></i>
+                    <span>Ihr Headerbild hier<br><small>(z.B. Baustelle, Gebäude oder Portrait)</small></span>
+                </div>
+            </div>
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+                <div class="hero-badge reveal-fade">
+                    <span class="badge-pulse"></span>
+                    Konzessionierter Baumeister · Planung & Ausführung
+                </div>
+
+                <h1 class="hero-title reveal-up">
+                    Bauen mit<br>
+                    <em class="hero-accent">Leidenschaft</em><br>
+                    und Präzision.
+                </h1>
+
+                <p class="hero-sub reveal-up" data-delay="200">
+                    Von der ersten Idee bis zur schlüsselfertigen Übergabe –
+                    wir begleiten Ihr Bauprojekt mit Fachkompetenz,
+                    Transparenz und nachhaltigem Qualitätsanspruch.
+                </p>
+
+                <div class="hero-actions reveal-up" data-delay="350">
+                    <a href="#kontakt"    class="btn btn-primary"><span>Projekt anfragen</span><i class="fas fa-arrow-right"></i></a>
+                    <a href="#leistungen" class="btn btn-ghost"><span>Leistungen entdecken</span></a>
+                </div>
+
+                <div class="hero-kpi reveal-up" data-delay="500">
+                    <div class="kpi-item">
+                        <strong>15<span>+</span></strong>
+                        <span>Jahre Erfahrung</span>
+                    </div>
+                    <div class="kpi-divider"></div>
+                    <div class="kpi-item">
+                        <strong>200<span>+</span></strong>
+                        <span>Projekte</span>
+                    </div>
+                    <div class="kpi-divider"></div>
+                    <div class="kpi-item">
+                        <strong>98<span>%</span></strong>
+                        <span>Zufriedene Kunden</span>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#ueber-uns" class="hero-scroll" aria-label="Nach unten scrollen">
+                <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+                <span>Mehr erfahren</span>
+            </a>
+
+            <div class="hero-shape-bottom"></div>
+        </section>
+
+        <!-- ===== ÜBER UNS ===== -->
+        <section id="ueber-uns">
+            <div class="container">
+                <div class="about-grid">
+
+                    <!-- Bild-Spalte -->
+                    <div class="about-img-col reveal-left">
+                        <div class="about-img-wrap">
+                            <!-- FOTO PLATZHALTER -->
+                            <div class="about-img-ph">
+                                <div class="ph-content">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>Ihr Profilfoto hier</span>
+                                </div>
+                            </div>
+                            <div class="about-badge about-badge-exp">
+                                <span class="ab-num">15<sup>+</sup></span>
+                                <span class="ab-lbl">Jahre<br>Erfahrung</span>
+                            </div>
+                            <div class="about-badge about-badge-cert">
+                                <i class="fas fa-award"></i>
+                                <span>Zertifizierter<br>Baumeister</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text-Spalte -->
+                    <div class="about-text-col reveal-right">
+                        <div class="section-tag">Über uns</div>
+                        <h2 class="section-title">
+                            Ihr zuverlässiger Partner für
+                            <em class="accent"> anspruchsvolle Bauprojekte</em>
+                        </h2>
+                        <p class="lead-text">
+                            Als konzessionierter Baumeister verbinden wir handwerkliche Tradition
+                            mit modernster Bautechnologie – für Ergebnisse, die dauerhaft überzeugen.
+                        </p>
+                        <p>
+                            Unser Unternehmen wurde mit dem Anspruch gegründet, Bauprojekte jeder
+                            Größenordnung mit höchster Sorgfalt und Professionalität umzusetzen. Ob
+                            Einfamilienhaus, Gewerbegebäude oder komplexe Sanierungsprojekte – wir stehen
+                            für termingerechte Ausführung, transparente Kommunikation und nachhaltige Qualität.
+                        </p>
+                        <p>
+                            Unser erfahrenes Team aus qualifizierten Fachleuten begleitet Sie von der ersten
+                            Idee bis zur finalen Übergabe. Dabei legen wir besonderen Wert auf eine offene
+                            Zusammenarbeit und eine lückenlose Dokumentation aller Bauphasen.
+                        </p>
+
+                        <div class="value-grid">
+                            <div class="value-item">
+                                <div class="value-icon"><i class="fas fa-shield-halved"></i></div>
+                                <div>
+                                    <h4>Zuverlässigkeit</h4>
+                                    <p>Termine und Budgets werden konsequent eingehalten</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i class="fas fa-gem"></i></div>
+                                <div>
+                                    <h4>Qualität</h4>
+                                    <p>Höchste Ausführungsstandards bei jedem Projekt</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i class="fas fa-handshake"></i></div>
+                                <div>
+                                    <h4>Partnerschaft</h4>
+                                    <p>Persönliche Betreuung auf Augenhöhe</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon"><i class="fas fa-leaf"></i></div>
+                                <div>
+                                    <h4>Nachhaltigkeit</h4>
+                                    <p>Ressourcenschonende, zukunftsorientierte Bauweise</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="#kontakt" class="btn btn-primary">
+                            <span>Gespräch vereinbaren</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== STATS ===== -->
+        <section id="stats">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card reveal-up">
+                        <div class="stat-icon"><i class="fas fa-calendar-check"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-num" data-target="15">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Jahre Erfahrung</p>
+                    </div>
+                    <div class="stat-card reveal-up" data-delay="100">
+                        <div class="stat-icon"><i class="fas fa-building"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-num" data-target="250">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Abgeschlossene Projekte</p>
+                    </div>
+                    <div class="stat-card reveal-up" data-delay="200">
+                        <div class="stat-icon"><i class="fas fa-face-smile"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-num" data-target="98">0</span>
+                            <span class="stat-suffix">%</span>
+                        </div>
+                        <p class="stat-label">Zufriedene Kunden</p>
+                    </div>
+                    <div class="stat-card reveal-up" data-delay="300">
+                        <div class="stat-icon"><i class="fas fa-users-gear"></i></div>
+                        <div class="stat-row">
+                            <span class="stat-num" data-target="50">0</span>
+                            <span class="stat-suffix">+</span>
+                        </div>
+                        <p class="stat-label">Partnerbetriebe</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== LEISTUNGEN ===== -->
+        <section id="leistungen">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">Leistungen</div>
+                    <h2 class="section-title">
+                        Alles aus einer Hand –<br>
+                        <em class="accent">Von der Planung bis zur Übergabe</em>
+                    </h2>
+                    <p class="section-sub">
+                        Als konzessionierter Baumeister decken wir das gesamte Spektrum moderner Bauleistungen ab.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal-up" data-delay="0">
+                        <div class="sc-icon"><i class="fas fa-city"></i></div>
+                        <h3>Neubau &amp; Hochbau</h3>
+                        <p>Realisierung von Wohn- und Geschäftsgebäuden, Mehrfamilienhäusern und Industriebauten nach höchsten Qualitätsstandards.</p>
+                        <ul class="sc-list">
+                            <li>Einfamilienhäuser &amp; Villen</li>
+                            <li>Mehrfamilienwohnhäuser</li>
+                            <li>Gewerbliche Neubauten</li>
+                            <li>Industrielle Anlagen</li>
+                        </ul>
+                        <a href="#kontakt" class="sc-link">Anfrage stellen <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" data-delay="100">
+                        <div class="sc-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+                        <h3>Umbau &amp; Sanierung</h3>
+                        <p>Professionelle Revitalisierung und Modernisierung von Bestandsgebäuden – energetisch optimiert und substanzschonend.</p>
+                        <ul class="sc-list">
+                            <li>Kernsanierungen</li>
+                            <li>Dachgeschossausbauten</li>
+                            <li>Zubau &amp; Aufstockungen</li>
+                            <li>Energetische Sanierung</li>
+                        </ul>
+                        <a href="#kontakt" class="sc-link">Anfrage stellen <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" data-delay="200">
+                        <div class="sc-icon"><i class="fas fa-drafting-compass"></i></div>
+                        <h3>Planung &amp; Projektentwicklung</h3>
+                        <p>Von der Idee bis zur Baugenehmigung – wir erarbeiten durchdachte Konzepte und begleiten das gesamte Genehmigungsverfahren.</p>
+                        <ul class="sc-list">
+                            <li>Vorentwurf &amp; Konzeption</li>
+                            <li>Einreichplanung</li>
+                            <li>Ausführungsplanung</li>
+                            <li>Behördenabwicklung</li>
+                        </ul>
+                        <a href="#kontakt" class="sc-link">Anfrage stellen <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" data-delay="300">
+                        <div class="sc-icon"><i class="fas fa-helmet-safety"></i></div>
+                        <h3>Bauaufsicht &amp; Bauleitung</h3>
+                        <p>Professionelle Koordination aller Gewerke – für reibungslose Abläufe, strikte Qualitätskontrolle und termingerechte Fertigstellung.</p>
+                        <ul class="sc-list">
+                            <li>Örtliche Bauaufsicht</li>
+                            <li>Qualitätskontrolle</li>
+                            <li>Kostenkontrolle</li>
+                            <li>Terminmanagement</li>
+                        </ul>
+                        <a href="#kontakt" class="sc-link">Anfrage stellen <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" data-delay="400">
+                        <div class="sc-icon"><i class="fas fa-calculator"></i></div>
+                        <h3>Statik &amp; Tragwerksplanung</h3>
+                        <p>Fundierte statische Berechnungen und Tragwerksplanungen für sichere und normkonforme Bauwerke jeder Komplexität.</p>
+                        <ul class="sc-list">
+                            <li>Statische Berechnungen</li>
+                            <li>Fundamentplanung</li>
+                            <li>Decken- &amp; Dachkonstruktionen</li>
+                            <li>Sicherheitsnachweise</li>
+                        </ul>
+                        <a href="#kontakt" class="sc-link">Anfrage stellen <i class="fas fa-arrow-right"></i></a>
+                    </article>
+
+                    <article class="service-card reveal-up" data-delay="500">
+                        <div class="sc-icon"><i class="fas fa-file-contract"></i></div>
+                        <h3>Gutachten &amp; Sachverständige</h3>
+                        <p>Unabhängige Baugutachten, Schadensfeststellungen und Expertisen für Privatpersonen, Unternehmen und Gerichte.</p>
+                        <ul class="sc-list">
+                            <li>Baumängel-Gutachten</li>
+                            <li>Immobilienbewertung</li>
+                            <li>Gerichtsgutachten</li>
+                            <li>Schadensfeststellung</li>
+                        </ul>
+                        <a href="#kontakt" class="sc-link">Anfrage stellen <i class="fas fa-arrow-right"></i></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROJEKTE ===== -->
+        <section id="projekte">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">Portfolio</div>
+                    <h2 class="section-title">
+                        Ausgewählte <em class="accent">Referenzprojekte</em>
+                    </h2>
+                    <p class="section-sub">
+                        Ein Einblick in unsere abgeschlossenen Bauprojekte – von der Planung bis zur Übergabe.
+                    </p>
+                </div>
+
+                <div class="filter-tabs reveal-up">
+                    <button class="filter-btn active" data-filter="all">Alle</button>
+                    <button class="filter-btn" data-filter="neubau">Neubau</button>
+                    <button class="filter-btn" data-filter="sanierung">Sanierung</button>
+                    <button class="filter-btn" data-filter="gewerbe">Gewerbe</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Projekt 1 -->
+                    <article class="project-card reveal-up" data-cat="neubau">
+                        <div class="pc-img">
+                            <div class="pc-ph" style="--ph-hue: 210;">
+                                <i class="fas fa-house"></i>
+                                <span>Ihr Projektfoto</span>
+                            </div>
+                            <div class="pc-overlay">
+                                <span class="pc-cat-tag">Neubau</span>
+                                <h3>Einfamilienhaus Modern</h3>
+                                <p>Familie Mustermann · Fertigstellung 2023</p>
+                                <a href="#kontakt" class="pc-cta">Details anfragen <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-body">
+                            <span class="pc-tag">Neubau</span>
+                            <h3>Einfamilienhaus Modern</h3>
+                            <p>Zeitgemäßer Wohnbau mit nachhaltiger Bauweise und Energieklasse A</p>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 2 -->
+                    <article class="project-card reveal-up" data-cat="neubau" data-delay="100">
+                        <div class="pc-img">
+                            <div class="pc-ph" style="--ph-hue: 140;">
+                                <i class="fas fa-building"></i>
+                                <span>Ihr Projektfoto</span>
+                            </div>
+                            <div class="pc-overlay">
+                                <span class="pc-cat-tag">Neubau</span>
+                                <h3>Mehrfamilienhaus Stadtmitte</h3>
+                                <p>12 Wohneinheiten · Fertigstellung 2023</p>
+                                <a href="#kontakt" class="pc-cta">Details anfragen <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-body">
+                            <span class="pc-tag">Neubau</span>
+                            <h3>Mehrfamilienhaus Stadtmitte</h3>
+                            <p>12 Wohneinheiten mit Tiefgarage im urbanen Umfeld</p>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 3 -->
+                    <article class="project-card reveal-up" data-cat="gewerbe" data-delay="200">
+                        <div class="pc-img">
+                            <div class="pc-ph" style="--ph-hue: 30;">
+                                <i class="fas fa-warehouse"></i>
+                                <span>Ihr Projektfoto</span>
+                            </div>
+                            <div class="pc-overlay">
+                                <span class="pc-cat-tag">Gewerbe</span>
+                                <h3>Büro- &amp; Gewerbegebäude</h3>
+                                <p>1.200 m² Nutzfläche · Fertigstellung 2022</p>
+                                <a href="#kontakt" class="pc-cta">Details anfragen <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-body">
+                            <span class="pc-tag">Gewerbe</span>
+                            <h3>Büro- &amp; Gewerbegebäude</h3>
+                            <p>Moderner Bürokomplex mit 1.200 m² Nutzfläche</p>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 4 -->
+                    <article class="project-card reveal-up" data-cat="sanierung">
+                        <div class="pc-img">
+                            <div class="pc-ph" style="--ph-hue: 300;">
+                                <i class="fas fa-landmark"></i>
+                                <span>Ihr Projektfoto</span>
+                            </div>
+                            <div class="pc-overlay">
+                                <span class="pc-cat-tag">Sanierung</span>
+                                <h3>Altbausanierung Gründerzeit</h3>
+                                <p>Denkmalgeschütztes Gebäude · Fertigstellung 2022</p>
+                                <a href="#kontakt" class="pc-cta">Details anfragen <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-body">
+                            <span class="pc-tag">Sanierung</span>
+                            <h3>Altbausanierung Gründerzeit</h3>
+                            <p>Behutsame Revitalisierung eines denkmalgeschützten Gebäudes</p>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 5 -->
+                    <article class="project-card reveal-up" data-cat="sanierung" data-delay="100">
+                        <div class="pc-img">
+                            <div class="pc-ph" style="--ph-hue: 180;">
+                                <i class="fas fa-house-chimney-medical"></i>
+                                <span>Ihr Projektfoto</span>
+                            </div>
+                            <div class="pc-overlay">
+                                <span class="pc-cat-tag">Sanierung</span>
+                                <h3>Energetische Vollsanierung</h3>
+                                <p>Energieklasse A+ · Fertigstellung 2024</p>
+                                <a href="#kontakt" class="pc-cta">Details anfragen <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-body">
+                            <span class="pc-tag">Sanierung</span>
+                            <h3>Energetische Vollsanierung</h3>
+                            <p>Vollsanierung mit Erreichung der Energieklasse A+</p>
+                        </div>
+                    </article>
+
+                    <!-- Projekt 6 -->
+                    <article class="project-card reveal-up" data-cat="gewerbe" data-delay="200">
+                        <div class="pc-img">
+                            <div class="pc-ph" style="--ph-hue: 260;">
+                                <i class="fas fa-industry"></i>
+                                <span>Ihr Projektfoto</span>
+                            </div>
+                            <div class="pc-overlay">
+                                <span class="pc-cat-tag">Gewerbe</span>
+                                <h3>Logistikhalle Industriepark</h3>
+                                <p>3.500 m² Hallenfläche · Fertigstellung 2024</p>
+                                <a href="#kontakt" class="pc-cta">Details anfragen <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="pc-body">
+                            <span class="pc-tag">Gewerbe</span>
+                            <h3>Logistikhalle Industriepark</h3>
+                            <p>Großflächige Industriehalle mit 3.500 m² Nutzfläche</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PROZESS ===== -->
+        <section id="prozess">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">Unser Vorgehen</div>
+                    <h2 class="section-title">
+                        So begleiten wir <em class="accent">Ihr Projekt</em>
+                    </h2>
+                    <p class="section-sub">
+                        Strukturiert, transparent und zuverlässig – von der ersten Idee bis zur Schlüsselübergabe.
+                    </p>
+                </div>
+
+                <div class="process-list">
+                    <div class="process-step reveal-up">
+                        <div class="ps-num">01</div>
+                        <div class="ps-icon-wrap"><i class="fas fa-comments"></i></div>
+                        <div class="ps-body">
+                            <h3>Erstgespräch &amp; Analyse</h3>
+                            <p>In einem kostenlosen Erstgespräch analysieren wir Ihre Anforderungen, besichtigen das Grundstück und erarbeiten gemeinsam die Grundzüge Ihres Vorhabens. Ehrliche Beratung vor dem ersten Spatenstich.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step reveal-up" data-delay="100">
+                        <div class="ps-num">02</div>
+                        <div class="ps-icon-wrap"><i class="fas fa-pencil-ruler"></i></div>
+                        <div class="ps-body">
+                            <h3>Planung &amp; Genehmigung</h3>
+                            <p>Wir erstellen alle erforderlichen Pläne und Unterlagen für das Baugenehmigungsverfahren und wickeln die gesamte Behördenkorrespondenz für Sie ab – termingerecht und vollständig.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step reveal-up" data-delay="200">
+                        <div class="ps-num">03</div>
+                        <div class="ps-icon-wrap"><i class="fas fa-people-group"></i></div>
+                        <div class="ps-body">
+                            <h3>Ausschreibung &amp; Vergabe</h3>
+                            <p>Transparente Ausschreibung aller Gewerke, sorgfältiger Angebotsvergleich und faire Vergabe an qualifizierte Professionisten aus unserem bewährten regionalen Partnernetzwerk.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step reveal-up" data-delay="300">
+                        <div class="ps-num">04</div>
+                        <div class="ps-icon-wrap"><i class="fas fa-hard-hat"></i></div>
+                        <div class="ps-body">
+                            <h3>Ausführung &amp; Kontrolle</h3>
+                            <p>Professionelle Bauleitung mit lückenloser Qualitäts-, Kosten- und Terminkontrolle. Regelmäßige Bauberichte halten Sie jederzeit über den aktuellen Fortschritt informiert.</p>
+                        </div>
+                    </div>
+
+                    <div class="process-step reveal-up" data-delay="400">
+                        <div class="ps-num">05</div>
+                        <div class="ps-icon-wrap"><i class="fas fa-key"></i></div>
+                        <div class="ps-body">
+                            <h3>Übergabe &amp; Nachbetreuung</h3>
+                            <p>Sorgfältige Abnahme mit vollständiger Dokumentation, Übergabe aller Unterlagen und Garantiepapiere sowie langfristige Nachbetreuung. Wir bleiben auch nach der Übergabe Ihr Ansprechpartner.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== REFERENZEN / TESTIMONIALS ===== -->
+        <section id="referenzen">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">Kundenstimmen</div>
+                    <h2 class="section-title">
+                        Was unsere <em class="accent">Kunden sagen</em>
+                    </h2>
+                </div>
+
+                <div class="testimonials-wrap">
+                    <div class="testimonials-track" id="tm-track">
+
+                        <div class="tm-card">
+                            <div class="tm-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                „Vom ersten Gespräch bis zur Schlüsselübergabe war die Zusammenarbeit absolut professionell.
+                                Unser Traumhaus wurde pünktlich und im vereinbarten Budget fertiggestellt.
+                                Wir können den Baumeister uneingeschränkt empfehlen!"
+                            </blockquote>
+                            <div class="tm-author">
+                                <div class="tm-avatar"><i class="fas fa-user"></i></div>
+                                <div>
+                                    <strong>Familie Mustermann</strong>
+                                    <span>Neubau Einfamilienhaus · 2023</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tm-card">
+                            <div class="tm-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                „Die Sanierung unseres Altbaus war ein komplexes Projekt, das mit großer Sorgfalt und
+                                Fachkenntnis umgesetzt wurde. Besonders beeindruckt hat uns die transparente Kommunikation
+                                und die außergewöhnliche Qualität der Ausführung."
+                            </blockquote>
+                            <div class="tm-author">
+                                <div class="tm-avatar"><i class="fas fa-user-tie"></i></div>
+                                <div>
+                                    <strong>Immobilien GmbH Muster</strong>
+                                    <span>Altbausanierung · 2022</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tm-card">
+                            <div class="tm-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                „Das Gutachten war fundiert, verständlich aufbereitet und hat uns in einem komplexen
+                                Rechtsstreit entscheidend geholfen. Ein echter Experte mit Weitblick, Integrität
+                                und fundiertem Fachwissen."
+                            </blockquote>
+                            <div class="tm-author">
+                                <div class="tm-avatar"><i class="fas fa-user"></i></div>
+                                <div>
+                                    <strong>Dr. Max Beispiel</strong>
+                                    <span>Baugutachten · 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tm-card">
+                            <div class="tm-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <blockquote>
+                                „Unser Gewerbegebäude wurde von Beginn an professionell geplant und mit höchster Qualität
+                                ausgeführt. Die unkomplizierte Zusammenarbeit und die Ergebnisse übertreffen unsere
+                                Erwartungen bei weitem."
+                            </blockquote>
+                            <div class="tm-author">
+                                <div class="tm-avatar"><i class="fas fa-building"></i></div>
+                                <div>
+                                    <strong>Muster AG</strong>
+                                    <span>Gewerbegebäude · 2023</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- /.testimonials-track -->
+
+                    <div class="tm-controls">
+                        <button class="tm-btn" id="tm-prev" aria-label="Vorheriger"><i class="fas fa-arrow-left"></i></button>
+                        <div class="tm-dots" id="tm-dots"></div>
+                        <button class="tm-btn" id="tm-next" aria-label="Nächster"><i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== KONTAKT ===== -->
+        <section id="kontakt">
+            <div class="container">
+                <div class="section-header reveal-up">
+                    <div class="section-tag">Kontakt</div>
+                    <h2 class="section-title">
+                        Starten wir Ihr Projekt <em class="accent">gemeinsam</em>
+                    </h2>
+                    <p class="section-sub">
+                        Nehmen Sie Kontakt auf – wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info-Seite -->
+                    <div class="contact-info reveal-left">
+                        <div class="ci-card">
+                            <h3>Kontaktdaten</h3>
+
+                            <div class="ci-item">
+                                <div class="ci-icon"><i class="fas fa-location-dot"></i></div>
+                                <div>
+                                    <strong>Adresse</strong>
+                                    <span>[Ihre Straße und Hausnummer]<br>[PLZ] [Ort]</span>
+                                </div>
+                            </div>
+                            <div class="ci-item">
+                                <div class="ci-icon"><i class="fas fa-phone"></i></div>
+                                <div>
+                                    <strong>Telefon</strong>
+                                    <span><a href="tel:+43XXXXXXXXXX">+43 XXX XXX XX XX</a></span>
+                                </div>
+                            </div>
+                            <div class="ci-item">
+                                <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+                                <div>
+                                    <strong>E-Mail</strong>
+                                    <span><a href="mailto:office@ihrbaumeister.at">office@ihrbaumeister.at</a></span>
+                                </div>
+                            </div>
+                            <div class="ci-item">
+                                <div class="ci-icon"><i class="fas fa-clock"></i></div>
+                                <div>
+                                    <strong>Bürozeiten</strong>
+                                    <span>Mo – Fr: 08:00 – 17:00 Uhr<br>Sa: Nach Vereinbarung</span>
+                                </div>
+                            </div>
+
+                            <div class="ci-social">
+                                <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link" aria-label="XING"><i class="fab fa-xing"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- Karte Platzhalter -->
+                        <div class="map-ph">
+                            <i class="fas fa-map-location-dot"></i>
+                            <span>Google Maps wird hier eingebettet</span>
+                        </div>
+                    </div>
+
+                    <!-- Formular -->
+                    <div class="contact-form-wrap reveal-right">
+                        <form id="contact-form" class="contact-form" novalidate>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Vor- &amp; Nachname <span aria-hidden="true">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="Max Mustermann" required autocomplete="name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">E-Mail-Adresse <span aria-hidden="true">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="max@beispiel.at" required autocomplete="email">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Telefonnummer</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+43 XXX XXX XX XX" autocomplete="tel">
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Gewünschte Leistung</label>
+                                    <select id="service" name="service">
+                                        <option value="">Bitte auswählen …</option>
+                                        <option value="neubau">Neubau &amp; Hochbau</option>
+                                        <option value="sanierung">Umbau &amp; Sanierung</option>
+                                        <option value="planung">Planung &amp; Projektentwicklung</option>
+                                        <option value="bauleitung">Bauaufsicht &amp; Bauleitung</option>
+                                        <option value="statik">Statik &amp; Tragwerksplanung</option>
+                                        <option value="gutachten">Gutachten &amp; Sachverständige</option>
+                                        <option value="sonstiges">Sonstiges</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group form-full">
+                                <label for="message">Ihre Nachricht <span aria-hidden="true">*</span></label>
+                                <textarea id="message" name="message" rows="5" placeholder="Beschreiben Sie kurz Ihr Vorhaben …" required></textarea>
+                            </div>
+
+                            <div class="form-group form-full form-check">
+                                <input type="checkbox" id="privacy" name="privacy" required>
+                                <label for="privacy">
+                                    Ich stimme der <a href="#" target="_blank">Datenschutzerklärung</a> zu und bin damit einverstanden,
+                                    dass meine Daten zur Bearbeitung meiner Anfrage verwendet werden. <span aria-hidden="true">*</span>
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span>Anfrage absenden</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+
+                            <div id="form-success" class="form-success" role="alert" aria-live="polite">
+                                <i class="fas fa-circle-check"></i>
+                                <p>Vielen Dank! Ihre Anfrage wurde erfolgreich gesendet. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== FOOTER ===== -->
+    <footer id="footer">
+        <div class="footer-main">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-brand-col">
+                        <!-- LOGO PLATZHALTER -->
+                        <div class="footer-logo">
+                            <span class="logo-icon"><i class="fas fa-building"></i></span>
+                            <div class="logo-text-wrap">
+                                <span class="logo-name">[Ihr Name]</span>
+                                <span class="logo-sub">Baumeister</span>
+                            </div>
+                        </div>
+                        <p class="footer-tagline">
+                            Ihr kompetenter Partner für Planung, Neubau, Sanierung und Bauleitung –
+                            mit Leidenschaft und Präzision.
+                        </p>
+                        <div class="footer-social">
+                            <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Leistungen</h4>
+                        <ul class="footer-links">
+                            <li><a href="#leistungen">Neubau &amp; Hochbau</a></li>
+                            <li><a href="#leistungen">Umbau &amp; Sanierung</a></li>
+                            <li><a href="#leistungen">Planung &amp; Projektentwicklung</a></li>
+                            <li><a href="#leistungen">Bauaufsicht &amp; Bauleitung</a></li>
+                            <li><a href="#leistungen">Statik &amp; Tragwerksplanung</a></li>
+                            <li><a href="#leistungen">Gutachten &amp; Sachverständige</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Unternehmen</h4>
+                        <ul class="footer-links">
+                            <li><a href="#ueber-uns">Über uns</a></li>
+                            <li><a href="#projekte">Referenzprojekte</a></li>
+                            <li><a href="#prozess">Unser Vorgehen</a></li>
+                            <li><a href="#referenzen">Kundenstimmen</a></li>
+                            <li><a href="#kontakt">Kontakt</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-col">
+                        <h4>Kontakt</h4>
+                        <ul class="footer-contact-list">
+                            <li>
+                                <i class="fas fa-location-dot"></i>
+                                <span>[Straße Nr.]<br>[PLZ Ort]</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+43XXXXXXXXXX">+43 XXX XXX XX XX</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:office@ihrbaumeister.at">office@ihrbaumeister.at</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="footer-bottom-inner">
+                    <p>&copy; 2024 [Ihr Name] Baumeister. Alle Rechte vorbehalten.</p>
+                    <nav class="footer-legal" aria-label="Rechtliches">
+                        <a href="#">Impressum</a>
+                        <a href="#">Datenschutz</a>
+                        <a href="#">AGB</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
